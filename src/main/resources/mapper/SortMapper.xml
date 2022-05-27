@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person.rootwhois.blog.dao.SortDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="person.rootwhois.blog.entity.Sort">
+        <id column="sort_id" property="sortId" />
+        <result column="sort_name" property="sortName" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        sort_id, sort_name, create_time, update_time
+    </sql>
+
+</mapper>

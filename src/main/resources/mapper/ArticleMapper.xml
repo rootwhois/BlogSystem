@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person.rootwhois.blog.dao.ArticleDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="person.rootwhois.blog.entity.Article">
+        <id column="article_id" property="articleId" />
+        <result column="article_user_id" property="articleUserId" />
+        <result column="article_title" property="articleTitle" />
+        <result column="article_description" property="articleDescription" />
+        <result column="article_content" property="articleContent" />
+        <result column="article_status" property="articleStatus" />
+        <result column="article_top" property="articleTop" />
+        <result column="article_views_count" property="articleViewsCount" />
+        <result column="article_like_count" property="articleLikeCount" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        article_id, article_user_id, article_title, article_description, article_content, article_status, article_top, article_views_count, article_like_count, create_time, update_time, deleted
+    </sql>
+
+
+</mapper>

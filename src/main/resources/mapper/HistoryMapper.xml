@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person.rootwhois.blog.dao.HistoryDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="person.rootwhois.blog.entity.History">
+        <id column="id" property="id" />
+        <result column="operator" property="operator" />
+        <result column="operate_method" property="operateMethod" />
+        <result column="operate_type" property="operateType" />
+        <result column="params" property="params" />
+        <result column="operate_result_status" property="operateResultStatus" />
+        <result column="operate_result" property="operateResult" />
+        <result column="operate_ip" property="operateIp" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, operator, operate_method, operate_type, params, operateResultStatus, operate_result, operate_ip, create_time, update_time
+    </sql>
+
+</mapper>

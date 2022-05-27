@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person.rootwhois.blog.dao.AdminDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="person.rootwhois.blog.entity.Admin">
+        <id column="user_id" property="userId" />
+        <result column="user_name" property="userName" />
+        <result column="user_password" property="userPassword" />
+        <result column="user_nickname" property="userNickname" />
+        <result column="user_avatar" property="userAvatar" />
+        <result column="user_email" property="userEmail" />
+        <result column="user_birthday" property="userBirthday" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, user_name, user_password, user_nickname, user_avatar, user_email, user_birthday, create_time, update_time
+    </sql>
+
+</mapper>

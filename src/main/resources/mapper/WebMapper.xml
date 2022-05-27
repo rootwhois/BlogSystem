@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person.rootwhois.blog.dao.WebDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="person.rootwhois.blog.entity.Web">
+        <id column="web_id" property="webId" />
+        <result column="web_user_id" property="webUserId" />
+        <result column="web_is_open" property="webIsOpen" />
+        <result column="web_domain" property="webDomain" />
+        <result column="web_name" property="webName" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        web_id, web_user_id, web_is_open, web_domain, web_name, create_time, update_time
+    </sql>
+
+</mapper>
